@@ -1,0 +1,84 @@
+body{
+    overflow: hidden;
+}
+.box{
+    width: 813px;
+    height: 176px;
+    position: absolute;
+    bottom: 10px;
+    animation: runn-ing 15s linear infinite;
+}
+.box >div{
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin:0 20px;
+}
+#txgc{
+    background: url("../images/txgc.png") no-repeat;
+    background-position: 0 0;
+    width: 154px;
+    margin-top: 56px;
+    animation: run-gc .5s steps(2) infinite;
+}
+#txgh{
+    background: url("../images/txgh.png") no-repeat;
+    background-position: 0 0;
+    width: 167px;
+    margin-top: 8px;
+    animation: run-gh .5s steps(2) infinite
+}
+#txgl{
+    background: url("../images/txgl.png") no-repeat;
+    background-position: 0 0;
+    width: 161px;
+    margin-top: 30px;
+    animation: run-gl .5s steps(2) infinite
+}
+#txgq{
+    background: url("../images/txgq.png") no-repeat;
+    background-position: 0 0;
+    width: 171px;
+    margin-top: 28px;
+    animation: run-gq .5s steps(2) infinite
+}
+@keyframes runn-ing {
+    0%{
+       transform: translateX(-813px)
+    }
+    100%{
+        transform: translateX(1536px)
+    }
+}
+@keyframes run-gc{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -308px 0;
+    }
+}
+@keyframes run-gh{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -334px 0;
+    }
+}
+@keyframes run-gl{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -322px 0;
+    }
+}
+@keyframes run-gq{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -342px 0;
+    }
+}
